@@ -8,6 +8,7 @@ Class.basic = {
     PARENT: "genericTank",
     LABEL: "Basic",
     DANGER: 4,
+    RESET_UPGRADE_MENU: true,
     /*BODY: {
         ACCELERATION: base.ACCEL * 1,
         SPEED: base.SPEED * 1,

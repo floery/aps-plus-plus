@@ -756,6 +756,21 @@ class io_spin2 extends IO {
         }
     }
 }
+class io_dontTurn extends IO {
+    constructor(b) {
+        super(b)
+        this.a = 0;
+    }
+    think(input) {
+        return {
+            target: {
+                x: Math.cos(this.a + offset),
+                y: Math.sin(this.a + offset),
+            },
+            main: true,
+        };
+    }
+}
 class io_fleeAtLowHealth extends IO {
     constructor(b) {
         super(b)
