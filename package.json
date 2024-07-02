@@ -11,10 +11,10 @@
     "build": "node standaloneClient/build minify"
   },
   "dependencies": {
-    "ws": "^8.13.0"
+    "ws": "^8.17.1"
   },
   "engines": {
-    "node": "18.x"
+    "node": "16.x"
   },
   "license": "GPL-3.0"
 }

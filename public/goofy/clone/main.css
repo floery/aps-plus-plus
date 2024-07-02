@@ -1,0 +1,77 @@
+html {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+#connect-button {
+  border-radius: 6px;
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(#02db2a 0% 50%, #7cfa78 50% 100%);
+  background-size: 100% 200%;
+  border-color: #39fa5d #2cb045 #2cb045 #39fa5d;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+
+  transition: background-position 0.5s ease;
+}
+#connect-button:hover {
+  cursor: pointer;
+  background-position: 0% 100%;
+}
+
+#connection-status {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+#connection-status.connected {
+  color: green;
+}
+
+#connection-status.disconnected {
+  color: red;
+}
+
+#connection-status.connecting {
+  color: black;
+}
+
+#connection-status.none {
+  color: blue;
+}
+
+#changelog {
+  margin: 20px 0 0 7px;
+}
+
+#changelog h3,
+#changelog h4,
+#changelog p {
+  margin: 0 0 5px 5px;
+}
+
+#mainServerLink {
+  background: linear-gradient(#9111a6 0% 50%, #bf1cd9 50% 100%);
+  background-size: 100% 200%;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+
+  transition: background-position 0.5s ease;
+}
+#mainServerLink:hover {
+  background-position: 0% 100%;
+}
+
+#debug #console {
+  font-family: monospace;
+  background-color: #111111;
+  border: 4px solid #333333;
+  color: white;
+}
+
+canvas {
+  padding: 0;
+  margin: 0;
+  border: 4px solid black;
+}

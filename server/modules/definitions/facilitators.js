@@ -541,7 +541,7 @@ exports.addAura = (damageFactor = 1, sizeFactor = 1, opacity = 0.3, auraColor) =
 }
 
 // misc functions
-exports.menu = (name = -1, color = -1, shape = 0) => {
+exports.menu = (name = -1, color = -1, shape = 0, tooltip = -1) => {
     let gun = {
         POSITION: [18, 10, -1.4, 0, 0, 0, 0],
         PROPERTIES: {
@@ -553,6 +553,7 @@ exports.menu = (name = -1, color = -1, shape = 0) => {
         PARENT: "genericTank",
         LABEL: name == -1 ? undefined : name,
         GUNS: [gun],
+        UPGRADE_TOOLTIP: tooltip == -1 ? undefined : tooltip,
         COLOR: color,
         UPGRADE_COLOR: color == -1 ? undefined : color,
         SHAPE: shape,
